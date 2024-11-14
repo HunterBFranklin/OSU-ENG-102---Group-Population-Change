@@ -157,7 +157,7 @@ if Run_Tests:
     print("Population 1 Minimum Value Z-Score =", x_pop1max)
     
     x_pop1test = (x_pop1min + x_pop1max)
-    print("Population 1: Test of Min and Max Z-Scores Equalling 0, the value =", x_pop1test)
+    print("Population 1: Test if Min and Max Z-Scores Equalling 0, the value =", x_pop1test)
 
     # Does not equal 0.0 becuase the data is not ditributed normally\
 
@@ -177,7 +177,7 @@ if Run_Tests:
     print("Population 2 Minimum Value Z-Score =", x_pop2max)
    
     x_pop2test = (x_pop2min + x_pop2max)
-    print("Population 2: Test of Min and Max Z-Scores Equalling 0, the value =", x_pop2test)
+    print("Population 2: Test if Min and Max Z-Scores Equalling 0, the value =", x_pop2test)
 
     # Equals 0.0
 
@@ -197,7 +197,7 @@ if Run_Tests:
     print("Population 3 Minimum Value Z-Score =", x_pop3max)
     
     x_pop3test = (x_pop3min + x_pop3max)
-    print("Population 3: Test of Min and Max Z-Scores Equalling 0, the value =", x_pop3test)
+    print("Population 3: Test if Min and Max Z-Scores Equalling 0, the value =", x_pop3test)
 
     # Equals 0.0
 
