@@ -105,8 +105,108 @@ def z_score(x, mu, sigma):
     Returns the z-score of x
     """
     
-    # Participating group member names go in this comment              
+    # Hunter Franklin, Jonathan Jones, & Daniel Goncharov    
 
-    # Your code goes between this comment and the return statement
+    # Our code:
+
+    data_set = population2 # Change to any of the three data sets
+
+    x = (-12) # Change this to any x-value on the given population data set
+
+    mu = mean(data_set) # Calculates the mean of the data set
+
+    sigma = stdev(data_set, mu) # Calculates the standard deviation (population) of the provided data set
+
+    z_algorithm = (x - mu) / sigma # Z-Score formula
+
     
-    return # Place the calculated z-score result between the return statement and this comment so it will be returned by the z_score function
+    return z_algorithm # Returned Z-Score
+
+
+z_algorithm = z_score (0, 0, 0) # 0 values are placeholder arguments
+
+print("Z-Score of Population 2: Value -12 =", z_algorithm) # Displayed Z-Score -- Change title to appropriate population number and x-value
+
+
+# Delete both """ and change Run_Tests to True to test three x-values, one from each population data set - This took a while to make so I wanted to leave it.  
+
+"""
+
+Run_Tests = False
+
+def z_score(x, mu, sigma):
+
+    z = (x - mu) / sigma
+    return z 
+
+if Run_Tests:
+
+    print("-" * 80)
+
+    x_pop1 = 14
+    mu_pop1 = mean(population1) # Random value chosen from Population1 data set
+    sigma_pop1 = stdev(population1, mu_pop1) # Standard Deviation (Population) of Population2 given Mean
+    z_pop1 = z_score(x_pop1, mu_pop1, sigma_pop1) # The Z-Score of this data value 14 given z_score function
+    print("Z_Score for Population 1: Value 14 =", z_pop1) # Printing Z-Score
+
+    print("-" * 80)
+
+    x_pop1min = z_score(least(population1), mu_pop1, sigma_pop1) # Minimum value Z-Score in Population1
+    print("Population 1 Minimum Value Z-Score =", x_pop1min)
+    x_pop1max = z_score(greatest(population1), mu_pop1, sigma_pop1) # Maximum value Z-Score in Population1
+    print("Population 1 Minimum Value Z-Score =", x_pop1max)
+    
+    x_pop1test = (x_pop1min + x_pop1max)
+    print("Population 1: Test of Min and Max Z-Scores Equalling 0, the value =", x_pop1test)
+
+    # Does not equal 0.0 becuase the data is not ditributed normally\
+
+    print("-" * 80)
+
+    x_pop2 = 20 # Random value chosen from Population2 data set
+    mu_pop2 = mean(population2) # Mean of Population2
+    sigma_pop2 = stdev(population2, mu_pop2) # Standard Deviation (Population) of Population2 given Mean
+    z_pop2 = z_score(x_pop2, mu_pop2, sigma_pop2) # The Z-Score of this data value 14 given z_score function
+    print("Z_Score for Population 2: Value 20 =", z_pop2) # Printing Z-Score
+
+    print("-" * 80)
+
+    x_pop2min = z_score(least(population2), mu_pop2, sigma_pop2) # Minimum value Z-Score in Population2
+    print("Population 2 Minimum Value Z-Score =", x_pop2min)
+    x_pop2max = z_score(greatest(population2), mu_pop2, sigma_pop2) # Maximum value Z-Score in Population2
+    print("Population 2 Minimum Value Z-Score =", x_pop2max)
+   
+    x_pop2test = (x_pop2min + x_pop2max)
+    print("Population 2: Test of Min and Max Z-Scores Equalling 0, the value =", x_pop2test)
+
+    # Equals 0.0
+
+    print("-" * 80)
+
+    x_pop3 = 375 # Random value chosen from Population3 data set
+    mu_pop3 = mean(population3) # Mean of Population2
+    sigma_pop3 = stdev(population3, mu_pop3) # Standard Deviation (Population) of Population2 given Mean
+    z_pop3 = z_score(x_pop3, mu_pop3, sigma_pop3) # The Z-Score of this data value 14 given z_score function
+    print("Z_Score for Population 3: Value 375 =", z_pop3) # Printing Z-Score
+
+    print("-" * 80)
+
+    x_pop3min = z_score(least(population3), mu_pop3, sigma_pop3) # Minimum value Z-Score in Population3
+    print("Population 3 Minimum Value Z-Score =", x_pop3min)
+    x_pop3max = z_score(greatest(population3), mu_pop3, sigma_pop3) # Maximum value Z-Score in Population3
+    print("Population 3 Minimum Value Z-Score =", x_pop3max)
+    
+    x_pop3test = (x_pop3min + x_pop3max)
+    print("Population 3: Test of Min and Max Z-Scores Equalling 0, the value =", x_pop3test)
+
+    # Equals 0.0
+
+    print("-" * 80)
+
+    # All input x-value results are accurate, to 11 sigfigs, my expected results that I made on Google Sheets.
+
+"""
+
+
+
+
